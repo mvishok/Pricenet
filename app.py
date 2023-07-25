@@ -5,7 +5,7 @@ import psycopg2
 from json import dumps
 from os import environ
 from autocorrect import Speller
-Spell = Speller()
+#Spell = Speller()
 
 app = Flask(__name__)
 
@@ -42,7 +42,7 @@ def home():
     else:
         placeholderText = escape(getQuery)
         results = query.search(cursor, dumps, escape(getQuery))
-        qSpell = Spell(getQuery)
+        qSpell = "" #Spell(getQuery)
         if qSpell == getQuery:  qSpell = False
     return render_template('index.html', query=getQuery, placeholder=placeholderText, results=results, qSpell=qSpell)
 
