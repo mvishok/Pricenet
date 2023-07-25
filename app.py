@@ -4,7 +4,7 @@ import query
 import psycopg2
 from json import dumps
 from os import environ
-from autocorrect import Speller
+#from autocorrect import Speller
 #Spell = Speller()
 
 app = Flask(__name__)
