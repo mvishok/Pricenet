@@ -2,35 +2,63 @@ import {load} from 'cheerio';
 import bent from 'bent';
 
 const flipkart = async (q) => {
-    // const headers = {
-    //     "Accept": "application/json, text/plain, */*",
-    //     "Accept-Encoding": "gzip, compress, deflate, br",
-    //     "Connection": "close",
-    //     "Host": "www.flipkart.com",
-    //     "User-Agent": "axios/1.7.2"
-    // }
-    // const options = {
-    //     headers,
-    //     method: 'GET',
-    //     url
-    // }
     const get = bent('https://www.flipkart.com', 'GET', 'string', 200);
     const response = await get(
         q
     );
-    console.log(response);
     const $ = load(response);
     const data = [];
+    $('.slAVV4').each((index, element) => {
+        const title = $($(element).find('a').get(1)).attr('title');
+        if (!title || title == '') return;
+        const link = $(element).find('a').attr('href');
+        if (!link || link == '') return;
+        const rating = parseFloat($(element).find('.XQDdHH').text());
+        const price = parseInt($(element).find('.Nx9bqj').text().match(/\d+/g).join(''));
+        if (!price  || price == '') return;
+        let freeDelivery = false;
+        if ($(element).find('.yiggsN').text().toLowerCase().includes("free delivery")){
+            freeDelivery = true;
+        }
+        const desc = $(element).find('.NqpwHC').text();
+        const img = $(element).find('img').attr('src');
+
+        data.push({ 
+            "title": title,
+            "link": `https://www.flipkart.com${link}`,
+            "rating": rating,
+            "price": price,
+            "freeDelivery": freeDelivery,
+            "desc": desc,
+            "img": img
+        });
+    });
     $('.cPHDOP').each((index, element) => {
         const title = $(element).find('.KzDlHZ').text();
-        const price = $(element).find('.Nx9bqj').text();
-        const rating = $(element).find('.XQDdHH').text();
-        data.push({ title, price, rating });
+        if (!title || title == '') return;
+        const link = $(element).find('a').attr("href");
+        if (!link || link == '') return;
+        const rating = parseFloat($(element).find('.XQDdHH').text());
+        const price = parseInt($(element).find('.Nx9bqj').text().match(/\d+/g).join(''));
+        if (!price  || price == '') return;
+        let freeDelivery = false;
+        if ($(element).find('.yiggsN').text().toLowerCase().includes("free delivery")){
+            freeDelivery = true;
+        }
+        const desc = $(element).find('._6NESgJ').find('li').map((index, element) => $(element).text().trim()).get().join(", ")
+        const img = $(element).find('img').attr('src');
+
+        data.push({ 
+            "title": title,
+            "link": `https://www.flipkart.com${link}`,
+            "rating": rating,
+            "price": price,
+            "freeDelivery": freeDelivery,
+            "desc": desc,
+            "img": img
+        });
     });
     return data;
 }
 
 export default flipkart;
-//usage
-//import flipkart from './flipkart.js';
-//const data = await flipkart('https://www.flipkart.com/search?q=mobiles');
