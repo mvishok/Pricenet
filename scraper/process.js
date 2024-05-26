@@ -2,19 +2,6 @@ import flipkart from './flipkart.js';
 import shopclues from './shopclues.js';
 import { mode } from 'mathjs';
 
-async function search(q) {
-    try {
-        const [sp, fp] = await Promise.all([
-            shopclues(q),
-            flipkart(q)
-        ]);
-        return [...fp, ...sp];
-    } catch (e) {
-        console.error(e);
-        return [];
-    }
-}
-    
 function sortRelevancy(results, q) {
     const queryWords = q.toLowerCase().split(' ');
     
@@ -54,5 +41,17 @@ function sortRelevancy(results, q) {
     return results;
 }
 
-const results = await search("moto g32");
-console.log(sortRelevancy(results, "moto g32"));
+async function search(q) {
+    try {
+        const [sp, fp] = await Promise.all([
+            shopclues(q),
+            flipkart(q)
+        ]);
+        return sortRelevancy([...fp, ...sp], q)
+    } catch (e) {
+        console.error(e);
+        return [];
+    }
+}
+
+export default search;
