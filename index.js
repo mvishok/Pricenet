@@ -1,4 +1,6 @@
 import Fastify from 'fastify'
+import search from './scraper/process.js';
+
 const fastify = Fastify({
   logger: true
 })
@@ -6,13 +8,8 @@ const fastify = Fastify({
 //API
 
 //search endpoint
-
 fastify.get('/search', async (request, reply) => {
-
-    //get query parameter
     const query = request.query.query
-
-    //check if query is empty
     if(!query){
         return {
             status: 'error',
@@ -20,10 +17,14 @@ fastify.get('/search', async (request, reply) => {
         }
     }
 
-    
+    const results = await search(query)
+
+    return {
+        status: 'success',
+        results
+    }
 });
 
-// Run the server!
 try {
   await fastify.listen({ port: 3000 })
 } catch (err) {
