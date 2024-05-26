@@ -18,15 +18,10 @@
   },
   "homepage": "https://github.com/mvishok/pricenet#readme",
   "dependencies": {
-    "axios": "^1.7.2",
     "bent": "^7.3.12",
     "cheerio": "^1.0.0-rc.12",
     "fastify": "^4.27.0",
-    "got": "^14.3.0",
-    "puppeteer": "^22.10.0",
-    "request": "^2.88.2",
-    "xmldom": "^0.6.0",
-    "xpath": "^0.0.34"
+    "mathjs": "^12.4.2"
   },
   "devDependencies": {
     "nodemon": "^3.1.0"
