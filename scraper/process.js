@@ -10,15 +10,24 @@ function sortRelevancy(results, q) {
         return queryWords.length > 0 && queryWords.every(word => itemWords.some(itemWord => itemWord.includes(word)));
     });
 
-    let avgPrice = 0;
+    let minPrice, maxPrice, avgPrice;
+
     try{
-        avgPrice = Math.floor(mode(results.filter(item => 'price' in item).map(item => parseFloat(item.price))));
+        avgPrice = results.filter(item => 'price' in item).map(item => parseFloat(item.price));
+        if (typeof mode(avgPrice) === 'number') {
+            avgPrice = mode(avgPrice);
+            minPrice = avgPrice - parseInt(avgPrice * 0.2);
+            maxPrice = avgPrice + parseInt(avgPrice * 0.2);
+        } else {
+            avgPrice = avgPrice.reduce((a, b) => a + b, 0) / avgPrice.length;
+            minPrice = avgPrice - parseInt(avgPrice * 0.4);
+            maxPrice = avgPrice + parseInt(avgPrice * 0.4);
+        }
     } catch (e) {
         avgPrice = results.length > 0 ? results[0].price : 0;
+        minPrice = avgPrice - parseInt(avgPrice * 0.4);
+        maxPrice = avgPrice + parseInt(avgPrice * 0.4);
     }
-
-    const minPrice = avgPrice - parseInt(avgPrice * 0.2);
-    const maxPrice = avgPrice + parseInt(avgPrice * 0.2);
 
     results.sort((a, b) => {
         const priceA = parseInt(a['price'] || 0);
