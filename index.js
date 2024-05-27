@@ -24,6 +24,13 @@ fastify.addHook('onClose', async (instance, done) => {
     done();
 });
 
+fastify.get('/', async (request, reply) => {
+    return { 
+        status: 'success',
+        message: 'Pricenet API'
+    }
+});
+
 //API
 //search endpoint
 fastify.get('/search', async (request, reply) => {
@@ -56,7 +63,7 @@ fastify.get('/search', async (request, reply) => {
 });
 
 try {
-    await fastify.listen({ port: 8080 })
+    await fastify.listen({ port: 3000 })
 } catch (err) {
     fastify.log.error(err)
     process.exit(1)
