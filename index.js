@@ -56,7 +56,7 @@ fastify.get('/search', async (request, reply) => {
 });
 
 try {
-    await fastify.listen({ port: 3000 })
+    await fastify.listen({ port: 8080 })
 } catch (err) {
     fastify.log.error(err)
     process.exit(1)
