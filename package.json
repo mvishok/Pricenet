@@ -21,7 +21,8 @@
     "bent": "^7.3.12",
     "cheerio": "^1.0.0-rc.12",
     "fastify": "^4.27.0",
-    "mathjs": "^12.4.2"
+    "mathjs": "^12.4.2",
+    "mongodb": "^6.6.2"
   },
   "devDependencies": {
     "nodemon": "^3.1.0"

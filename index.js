@@ -1,12 +1,30 @@
 import Fastify from 'fastify'
+import { MongoClient } from 'mongodb';
 import search from './scraper/process.js';
 
 const fastify = Fastify({
   logger: true
 })
 
-//API
+//Database
+const uri = process.env.MONGODB_URI;
+let client;
 
+fastify.addHook('onReady', async () => {
+    client = new MongoClient(uri);
+    await client.connect();
+    fastify.log.info('Connected to MongoDB');
+});
+
+fastify.addHook('onClose', async (instance, done) => {
+    if (client) {
+        await client.close();
+        fastify.log.info('MongoDB connection closed');
+    }
+    done();
+});
+
+//API
 //search endpoint
 fastify.get('/search', async (request, reply) => {
     const query = request.query.query
@@ -17,8 +35,20 @@ fastify.get('/search', async (request, reply) => {
         }
     }
 
-    const results = await search(query)
+    const db = client.db('pricenet');
+    const collection = db.collection('cache');
 
+    const cached = await collection.findOne({query});
+    if(cached){
+        return {
+            status: 'success',
+            results: cached.results
+        }
+    }
+
+    const results = await search(query)
+    await collection.insertOne({query, results});
+    
     return {
         status: 'success',
         results
@@ -26,8 +56,8 @@ fastify.get('/search', async (request, reply) => {
 });
 
 try {
-  await fastify.listen({ port: 3000 })
+    await fastify.listen({ port: 3000 })
 } catch (err) {
-  fastify.log.error(err)
-  process.exit(1)
+    fastify.log.error(err)
+    process.exit(1)
 }
