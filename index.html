@@ -74,13 +74,14 @@
         </div>
     </div><!-- End: Hero Clean Reverse -->
     <!-- Start: Animated Pretty Product List (v1.2) -->
-    {% if ! query or results[results].size() < 1  %}
+    {% if query and results[results].size() < 1 %}
     <div id="results" style="padding-top: 20px !important;">
         <div class="container">
             <h1 style="text-align:center;">No results found for {{ query.replace('+', ' ') }}</h1>
         </div>
     </div>
-    {% else %}
+    {% endif %}
+    {% if query and results[results].size() > 0 %}
     <div id="results">
         <div class="container">
             <form class="d-flex justify-content-center flex-wrap" method="post" data-bs-theme="light"><br /><br />
