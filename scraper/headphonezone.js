@@ -24,12 +24,12 @@ const headphonezone = async (q) => {
 
         data.push({ 
             "title": title,
-            "link": `https://www.headphonezone.in/${link}`,
+            "link": `https://www.headphonezone.in${link}`,
             "rating": rating,
             "price": price,
             "freeDelivery": true,
             "desc": desc,
-            "img": `https://www.headphonezone.in/${img}`,
+            "img": `${img}`,
             "trust": trust
         });
     });
