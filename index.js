@@ -2,9 +2,7 @@ import Fastify from 'fastify'
 import { MongoClient } from 'mongodb';
 import search from './scraper/process.js';
 
-const fastify = Fastify({
-  logger: true
-})
+const fastify = Fastify()
 
 //Database
 const uri = process.env.MONGODB_URI;
