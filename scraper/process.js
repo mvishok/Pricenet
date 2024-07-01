@@ -1,6 +1,7 @@
 import headphonezone from './headphonezone.js';
 import shopclues from './shopclues.js';
 import vedantcomputers from './vedantcomputers.js';
+import vijay from './vijay.js';
 import { mode } from 'mathjs';
 
 function sortRelevancy(results, q) {
@@ -53,12 +54,13 @@ function sortRelevancy(results, q) {
 
 async function search(q) {
     try {
-        const [sp, fp, vc] = await Promise.all([
+        const [sp, fp, vc, vsc] = await Promise.all([
             shopclues(q),
             headphonezone(q),
-            vedantcomputers(q)
+            vedantcomputers(q),
+            vijay(q)
         ]);
-        return sortRelevancy([...fp, ...sp, ...vc], q)
+        return sortRelevancy([...fp, ...sp, ...vc, ...vsc], q)
     } catch (e) {
         console.error(e);
         return [];
