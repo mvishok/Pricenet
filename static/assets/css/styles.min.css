@@ -1,0 +1,1177 @@
+@font-face {
+    font-family: Raleway;
+    src: url(static/assets/fonts/1Ptsg8zYS_SKggPNyCg4QIFqPfE.woff2?h=e7399f43314d664250d8643eabf31b60)
+        format("woff2");
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+        U+FE2E-FE2F;
+}
+@font-face {
+    font-family: Raleway;
+    src: url(static/assets/fonts/1Ptsg8zYS_SKggPNyCg4SYFqPfE.woff2?h=e7399f43314d664250d8643eabf31b60)
+        format("woff2");
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+    unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+    font-family: Raleway;
+    src: url(static/assets/fonts/1Ptsg8zYS_SKggPNyCg4QoFqPfE.woff2?h=e7399f43314d664250d8643eabf31b60)
+        format("woff2");
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+        U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323,
+        U+0329, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+    font-family: Raleway;
+    src: url(static/assets/fonts/1Ptsg8zYS_SKggPNyCg4Q4FqPfE.woff2?h=e7399f43314d664250d8643eabf31b60)
+        format("woff2");
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+    unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF,
+        U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+    font-family: Raleway;
+    src: url(static/assets/fonts/1Ptsg8zYS_SKggPNyCg4TYFq.woff2?h=e7399f43314d664250d8643eabf31b60)
+        format("woff2");
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+        U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122,
+        U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+    font-family: Raleway;
+    src: url(static/assets/fonts/1Ptsg8zYS_SKggPNyCg4QIFqPfE.woff2?h=e7399f43314d664250d8643eabf31b60)
+        format("woff2");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+        U+FE2E-FE2F;
+}
+@font-face {
+    font-family: Raleway;
+    src: url(static/assets/fonts/1Ptsg8zYS_SKggPNyCg4SYFqPfE.woff2?h=e7399f43314d664250d8643eabf31b60)
+        format("woff2");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+    unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+    font-family: Raleway;
+    src: url(static/assets/fonts/1Ptsg8zYS_SKggPNyCg4QoFqPfE.woff2?h=e7399f43314d664250d8643eabf31b60)
+        format("woff2");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+        U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323,
+        U+0329, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+    font-family: Raleway;
+    src: url(static/assets/fonts/1Ptsg8zYS_SKggPNyCg4Q4FqPfE.woff2?h=e7399f43314d664250d8643eabf31b60)
+        format("woff2");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+    unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF,
+        U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+    font-family: Raleway;
+    src: url(static/assets/fonts/1Ptsg8zYS_SKggPNyCg4TYFq.woff2?h=e7399f43314d664250d8643eabf31b60)
+        format("woff2");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+        U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122,
+        U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+    font-family: Raleway;
+    src: url(static/assets/fonts/1Ptsg8zYS_SKggPNyCg4QIFqPfE.woff2?h=e7399f43314d664250d8643eabf31b60)
+        format("woff2");
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+        U+FE2E-FE2F;
+}
+@font-face {
+    font-family: Raleway;
+    src: url(static/assets/fonts/1Ptsg8zYS_SKggPNyCg4SYFqPfE.woff2?h=e7399f43314d664250d8643eabf31b60)
+        format("woff2");
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+    unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+    font-family: Raleway;
+    src: url(static/assets/fonts/1Ptsg8zYS_SKggPNyCg4QoFqPfE.woff2?h=e7399f43314d664250d8643eabf31b60)
+        format("woff2");
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+        U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323,
+        U+0329, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+    font-family: Raleway;
+    src: url(static/assets/fonts/1Ptsg8zYS_SKggPNyCg4Q4FqPfE.woff2?h=e7399f43314d664250d8643eabf31b60)
+        format("woff2");
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+    unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF,
+        U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+    font-family: Raleway;
+    src: url(static/assets/fonts/1Ptsg8zYS_SKggPNyCg4TYFq.woff2?h=e7399f43314d664250d8643eabf31b60)
+        format("woff2");
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+        U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122,
+        U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+    font-family: Raleway;
+    src: url(static/assets/fonts/1Ptsg8zYS_SKggPNyCg4QIFqPfE.woff2?h=e7399f43314d664250d8643eabf31b60)
+        format("woff2");
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+        U+FE2E-FE2F;
+}
+@font-face {
+    font-family: Raleway;
+    src: url(static/assets/fonts/1Ptsg8zYS_SKggPNyCg4SYFqPfE.woff2?h=e7399f43314d664250d8643eabf31b60)
+        format("woff2");
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+    unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+    font-family: Raleway;
+    src: url(static/assets/fonts/1Ptsg8zYS_SKggPNyCg4QoFqPfE.woff2?h=e7399f43314d664250d8643eabf31b60)
+        format("woff2");
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+        U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323,
+        U+0329, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+    font-family: Raleway;
+    src: url(static/assets/fonts/1Ptsg8zYS_SKggPNyCg4Q4FqPfE.woff2?h=e7399f43314d664250d8643eabf31b60)
+        format("woff2");
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+    unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF,
+        U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+    font-family: Raleway;
+    src: url(static/assets/fonts/1Ptsg8zYS_SKggPNyCg4TYFq.woff2?h=e7399f43314d664250d8643eabf31b60)
+        format("woff2");
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+        U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122,
+        U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+    font-family: Raleway;
+    src: url(static/assets/fonts/1Ptsg8zYS_SKggPNyCg4QIFqPfE.woff2?h=e7399f43314d664250d8643eabf31b60)
+        format("woff2");
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+        U+FE2E-FE2F;
+}
+@font-face {
+    font-family: Raleway;
+    src: url(static/assets/fonts/1Ptsg8zYS_SKggPNyCg4SYFqPfE.woff2?h=e7399f43314d664250d8643eabf31b60)
+        format("woff2");
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+    unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+    font-family: Raleway;
+    src: url(static/assets/fonts/1Ptsg8zYS_SKggPNyCg4QoFqPfE.woff2?h=e7399f43314d664250d8643eabf31b60)
+        format("woff2");
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+        U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323,
+        U+0329, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+    font-family: Raleway;
+    src: url(static/assets/fonts/1Ptsg8zYS_SKggPNyCg4Q4FqPfE.woff2?h=e7399f43314d664250d8643eabf31b60)
+        format("woff2");
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+    unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF,
+        U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+    font-family: Raleway;
+    src: url(static/assets/fonts/1Ptsg8zYS_SKggPNyCg4TYFq.woff2?h=e7399f43314d664250d8643eabf31b60)
+        format("woff2");
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+        U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122,
+        U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+    font-family: Raleway;
+    src: url(static/assets/fonts/1Ptug8zYS_SKggPNyCAIT5lu.woff2?h=e7399f43314d664250d8643eabf31b60)
+        format("woff2");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+        U+FE2E-FE2F;
+}
+@font-face {
+    font-family: Raleway;
+    src: url(static/assets/fonts/1Ptug8zYS_SKggPNyCkIT5lu.woff2?h=e7399f43314d664250d8643eabf31b60)
+        format("woff2");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+    font-family: Raleway;
+    src: url(static/assets/fonts/1Ptug8zYS_SKggPNyCIIT5lu.woff2?h=e7399f43314d664250d8643eabf31b60)
+        format("woff2");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+        U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323,
+        U+0329, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+    font-family: Raleway;
+    src: url(static/assets/fonts/1Ptug8zYS_SKggPNyCMIT5lu.woff2?h=e7399f43314d664250d8643eabf31b60)
+        format("woff2");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF,
+        U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+    font-family: Raleway;
+    src: url(static/assets/fonts/1Ptug8zYS_SKggPNyC0ITw.woff2?h=e7399f43314d664250d8643eabf31b60)
+        format("woff2");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+        U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122,
+        U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+    font-family: Raleway;
+    src: url(static/assets/fonts/1Ptug8zYS_SKggPNyCAIT5lu.woff2?h=e7399f43314d664250d8643eabf31b60)
+        format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+        U+FE2E-FE2F;
+}
+@font-face {
+    font-family: Raleway;
+    src: url(static/assets/fonts/1Ptug8zYS_SKggPNyCkIT5lu.woff2?h=e7399f43314d664250d8643eabf31b60)
+        format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+    font-family: Raleway;
+    src: url(static/assets/fonts/1Ptug8zYS_SKggPNyCIIT5lu.woff2?h=e7399f43314d664250d8643eabf31b60)
+        format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+        U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323,
+        U+0329, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+    font-family: Raleway;
+    src: url(static/assets/fonts/1Ptug8zYS_SKggPNyCMIT5lu.woff2?h=e7399f43314d664250d8643eabf31b60)
+        format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF,
+        U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+    font-family: Raleway;
+    src: url(static/assets/fonts/1Ptug8zYS_SKggPNyC0ITw.woff2?h=e7399f43314d664250d8643eabf31b60)
+        format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+        U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122,
+        U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+    font-family: Raleway;
+    src: url(static/assets/fonts/1Ptug8zYS_SKggPNyCAIT5lu.woff2?h=e7399f43314d664250d8643eabf31b60)
+        format("woff2");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+        U+FE2E-FE2F;
+}
+@font-face {
+    font-family: Raleway;
+    src: url(static/assets/fonts/1Ptug8zYS_SKggPNyCkIT5lu.woff2?h=e7399f43314d664250d8643eabf31b60)
+        format("woff2");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+    font-family: Raleway;
+    src: url(static/assets/fonts/1Ptug8zYS_SKggPNyCIIT5lu.woff2?h=e7399f43314d664250d8643eabf31b60)
+        format("woff2");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+        U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323,
+        U+0329, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+    font-family: Raleway;
+    src: url(static/assets/fonts/1Ptug8zYS_SKggPNyCMIT5lu.woff2?h=e7399f43314d664250d8643eabf31b60)
+        format("woff2");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF,
+        U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+    font-family: Raleway;
+    src: url(static/assets/fonts/1Ptug8zYS_SKggPNyC0ITw.woff2?h=e7399f43314d664250d8643eabf31b60)
+        format("woff2");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+        U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122,
+        U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+    font-family: Raleway;
+    src: url(static/assets/fonts/1Ptug8zYS_SKggPNyCAIT5lu.woff2?h=e7399f43314d664250d8643eabf31b60)
+        format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+        U+FE2E-FE2F;
+}
+@font-face {
+    font-family: Raleway;
+    src: url(static/assets/fonts/1Ptug8zYS_SKggPNyCkIT5lu.woff2?h=e7399f43314d664250d8643eabf31b60)
+        format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+    font-family: Raleway;
+    src: url(static/assets/fonts/1Ptug8zYS_SKggPNyCIIT5lu.woff2?h=e7399f43314d664250d8643eabf31b60)
+        format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+        U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323,
+        U+0329, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+    font-family: Raleway;
+    src: url(static/assets/fonts/1Ptug8zYS_SKggPNyCMIT5lu.woff2?h=e7399f43314d664250d8643eabf31b60)
+        format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF,
+        U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+    font-family: Raleway;
+    src: url(static/assets/fonts/1Ptug8zYS_SKggPNyC0ITw.woff2?h=e7399f43314d664250d8643eabf31b60)
+        format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+        U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122,
+        U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+    font-family: Raleway;
+    src: url(static/assets/fonts/1Ptug8zYS_SKggPNyCAIT5lu.woff2?h=e7399f43314d664250d8643eabf31b60)
+        format("woff2");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+        U+FE2E-FE2F;
+}
+@font-face {
+    font-family: Raleway;
+    src: url(static/assets/fonts/1Ptug8zYS_SKggPNyCkIT5lu.woff2?h=e7399f43314d664250d8643eabf31b60)
+        format("woff2");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+    font-family: Raleway;
+    src: url(static/assets/fonts/1Ptug8zYS_SKggPNyCIIT5lu.woff2?h=e7399f43314d664250d8643eabf31b60)
+        format("woff2");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+        U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323,
+        U+0329, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+    font-family: Raleway;
+    src: url(static/assets/fonts/1Ptug8zYS_SKggPNyCMIT5lu.woff2?h=e7399f43314d664250d8643eabf31b60)
+        format("woff2");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF,
+        U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+    font-family: Raleway;
+    src: url(static/assets/fonts/1Ptug8zYS_SKggPNyC0ITw.woff2?h=e7399f43314d664250d8643eabf31b60)
+        format("woff2");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+        U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122,
+        U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+html {
+    scroll-behavior: smooth;
+}
+.navbar {
+    min-height: 90px;
+    box-shadow: none;
+    border: none;
+    margin: 0;
+    border-radius: 0;
+    font-size: 16px;
+}
+.navbar .navbar-nav > li > a,
+.navbar a.navbar-brand.navbar-link {
+    min-height: 90px;
+    line-height: 90px;
+    padding-top: 0;
+    padding-bottom: 0;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    border: none;
+}
+@media (min-width: 768px) {
+    .navbar .navbar-nav > li > a {
+        margin: 0 0 0 1px;
+    }
+}
+.navbar.navbar-fixed-bottom,
+.navbar.navchange {
+    min-height: 60px;
+}
+.navbar.navbar-fixed-bottom .navbar-nav > li > a,
+.navbar.navbar-fixed-bottom a.navbar-brand.navbar-link,
+.navbar.navchange .navbar-nav > li > a,
+.navbar.navchange a.navbar-brand.navbar-link {
+    min-height: 60px;
+    line-height: 60px;
+}
+.navbar-brand img {
+    margin: 10px 0;
+    max-height: 50px;
+}
+.navbar-fixed-bottom .navbar-brand img,
+.navchange .navbar-brand img {
+    margin: 10px 0;
+    max-height: 40px;
+    width: auto;
+}
+.navbar .dropdown-menu {
+    box-shadow: none;
+    border-radius: 0 !important;
+    padding: 0;
+    border: none;
+    min-width: 200px;
+    -webkit-transition: background 0.6s ease-out;
+    transition: background 0.6s ease-out;
+}
+.navbar .dropdown-menu li a {
+    padding: 10px 15px;
+    margin: 0 0 1px;
+    font-size: 15px;
+}
+.navbar .navbar-toggle,
+.navbar .navbar-toggle:active,
+.navbar .navbar-toggle:hover {
+    border: none;
+    width: 40px;
+    height: 40px;
+    margin: 10px 15px 0 0;
+    background: 0 0 !important;
+    text-align: center;
+    padding: 0;
+}
+.icon-bar {
+    width: 22px;
+    float: right;
+}
+.top-bar {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+    margin-right: -3px;
+}
+.middle-bar {
+    opacity: 0;
+    margin-right: 30px;
+}
+.bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+    margin-right: -3px;
+}
+.navbar-toggle.collapsed .bottom-bar,
+.navbar-toggle.collapsed .top-bar {
+    transform: rotate(0);
+    margin-right: 0;
+}
+.navbar-toggle.collapsed .middle-bar {
+    opacity: 1;
+    margin-right: 0;
+}
+.icon-bar,
+.navbar,
+.navbar .dropdown-menu li a,
+.navbar .navbar-nav > li > a,
+.navbar a.navbar-brand.navbar-link,
+.navbar-brand img {
+    -webkit-transition: 0.6s ease-out;
+    transition: 0.6s ease-out;
+}
+.navbar.navbar-default.navbar-transparency,
+.navbar.navbar-inverse.navbar-transparency {
+    background: 0 0;
+}
+.navbar.navbar-default.navbar-transparency.navchange,
+.navbar.navbar-default.navbar-transparency.navchange .dropdown-menu,
+.navbar.navbar-default:not(.navbar-fixed-top).navbar-transparency,
+.navbar.navbar-default:not(.navbar-transparency),
+.navbar.navbar-default:not(.navbar-transparency) .dropdown-menu,
+.navbar:not(.navbar-transparency) .dropdown-menu {
+    background: #ddd;
+}
+.navbar.navbar-inverse.navbar-transparency.navchange,
+.navbar.navbar-inverse.navbar-transparency.navchange .dropdown-menu,
+.navbar.navbar-inverse:not(.navbar-fixed-top).navbar-transparency,
+.navbar.navbar-inverse:not(.navbar-transparency),
+.navbar.navbar-inverse:not(.navbar-transparency) .dropdown-menu,
+.navbar:not(.navbar-transparency) .dropdown-menu {
+    background: #333;
+}
+@media (max-width: 767px) {
+    .navbar .navbar-nav > li > a,
+    .navbar.navbar-fixed-bottom .navbar-nav > li > a,
+    .navbar.navchange .navbar-nav > li > a {
+        min-height: 40px;
+        line-height: 40px;
+    }
+    .navbar-brand img,
+    .navchange .navbar-brand img {
+        margin: 10px 0;
+        max-height: 40px;
+        width: auto;
+    }
+    .navbar {
+        position: relative !important;
+    }
+    .navbar,
+    .navbar a.navbar-brand.navbar-link,
+    .navbar.navchange,
+    .navbar.navchange a.navbar-brand.navbar-link {
+        min-height: 60px;
+        line-height: 60px;
+        height: auto;
+    }
+    .navbar-nav {
+        margin: 0 -15px;
+    }
+    .navbar .dropdown-menu {
+        width: 100%;
+        position: relative;
+    }
+    .navbar .navbar-nav .dropdown-menu > li > a {
+        padding: 0 30px;
+        margin: 0;
+        line-height: 40px;
+    }
+    .navbar.navbar-default,
+    .navbar.navbar-default .navbar-collapse,
+    .navbar.navbar-default .navbar-nav,
+    .navbar.navbar-default.navbar-transparency {
+        background: #ddd;
+    }
+    .navbar.navbar-inverse,
+    .navbar.navbar-inverse .navbar-collapse,
+    .navbar.navbar-inverse .navbar-nav,
+    .navbar.navbar-inverse.navbar-transparency {
+        background: #333;
+    }
+}
+.navbar.navbar-default .navbar-nav > li > a,
+.navbar.navbar-default a.navbar-brand.navbar-link,
+.navbar.navbar-default a.navbar-brand.navbar-link:hover {
+    color: #000;
+    background: 0 0;
+}
+.navbar.navbar-inverse .navbar-nav > li > a,
+.navbar.navbar-inverse a.navbar-brand.navbar-link,
+.navbar.navbar-inverse a.navbar-brand.navbar-link:hover {
+    color: #fff;
+    background: 0 0;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:focus,
+.navbar.navbar-default .dropdown-menu,
+.navbar.navbar-default .dropdown-menu li > a:focus,
+.navbar.navbar-default .dropdown-menu li > a:hover,
+.navbar.navbar-default .navbar-nav > .open > a:hover,
+.navbar.navbar-default .navbar-nav > li.active > a,
+.navbar.navbar-default .navbar-nav > li > a:hover {
+    color: #000;
+    background: rgba(255, 255, 255, 0.4);
+}
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:focus,
+.navbar.navbar-inverse .dropdown-menu,
+.navbar.navbar-inverse .dropdown-menu li > a:focus,
+.navbar.navbar-inverse .dropdown-menu li > a:hover,
+.navbar.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar.navbar-inverse .navbar-nav > li.active > a,
+.navbar.navbar-inverse .navbar-nav > li > a:hover {
+    color: #fff;
+    background: rgba(0, 0, 0, 0.2);
+}
+.navbar.navbar-default .dropdown-menu li a {
+    color: #000 !important;
+}
+.navbar.navbar-inverse .dropdown-menu li a {
+    color: #fff !important;
+}
+.navbar.navbar-default .dropdown-menu li a:hover,
+.navbar.navbar-default .dropdown-menu li.active a {
+    background-image: none !important;
+    background: rgba(255, 255, 255, 0.4) !important;
+}
+.navbar.navbar-inverse .dropdown-menu li a:hover,
+.navbar.navbar-inverse .dropdown-menu li.active a {
+    background-image: none !important;
+    background: rgba(0, 0, 0, 0.2) !important;
+}
+.navbar.navbar-default .icon-bar {
+    background: #000;
+}
+.navbar.navbar-inverse .icon-bar {
+    background: #fff;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+    border-color: rgba(255, 255, 255, 0.6);
+    border-width: 1px;
+}
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
+    border-color: rgba(0, 0, 0, 0.6);
+    border-width: 1px;
+}
+.product-list {
+    overflow: hidden;
+    -webkit-perspective: 1000px;
+    -moz-perspective: 1000px;
+    -ms-perspective: 1000px;
+    perspective: 1000px;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+.animation-element {
+    opacity: 0;
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+.animation-element.slide-left {
+    opacity: 0;
+    -moz-transition: 0.5s linear;
+    -webkit-transition: 0.5s linear;
+    -o-transition: 0.5s linear;
+    transition: 0.5s linear;
+    -moz-transform: translate3d(-100px, 0, 0);
+    -webkit-transform: translate3d(-100px, 0, 0);
+    -o-transform: translate(-100px, 0);
+    -ms-transform: translate(-100px, 0);
+    transform: translate3d(-100px, 0, 0);
+}
+.animation-element.slide-right {
+    opacity: 0;
+    -moz-transition: 0.5s linear;
+    -webkit-transition: 0.5s linear;
+    -o-transition: 0.5s linear;
+    transition: 0.5s linear;
+    -moz-transform: translate3d(100px, 0, 0);
+    -webkit-transform: translate3d(100px, 0, 0);
+    -o-transform: translate(100px, 0);
+    -ms-transform: translate(100px, 0);
+    transform: translate3d(100px, 0, 0);
+}
+.animation-element.slide-top {
+    opacity: 0;
+    -moz-transition: 0.5s linear;
+    -webkit-transition: 0.5s linear;
+    -o-transition: 0.5s linear;
+    transition: 0.5s linear;
+    -moz-transform: translate3d(0, -100px, 0);
+    -webkit-transform: translate3d(0, -100px, 0);
+    -o-transform: translate(0, -100px);
+    -ms-transform: translate(0, -100px);
+    transform: translate3d(0, -100px, 0);
+}
+.animation-element.slide-top-left {
+    opacity: 0;
+    -moz-transition: 0.5s linear;
+    -webkit-transition: 0.5s linear;
+    -o-transition: 0.5s linear;
+    transition: 0.5s linear;
+    -moz-transform: translate3d(-100px, -100px, 0);
+    -webkit-transform: translate3d(-100px, -100px, 0);
+    -o-transform: translate(-100px, -100px);
+    -ms-transform: translate(-100px, -100px);
+    transform: translate3d(-100px, -100px, 0);
+}
+.animation-element.slide-top-right {
+    opacity: 0;
+    -moz-transition: 0.5s linear;
+    -webkit-transition: 0.5s linear;
+    -o-transition: 0.5s linear;
+    transition: 0.5s linear;
+    -moz-transform: translate3d(100px, -100px, 0);
+    -webkit-transform: translate3d(100px, -100px, 0);
+    -o-transform: translate(100px, -100px);
+    -ms-transform: translate(100px, -100px);
+    transform: translate3d(100px, -100px, 0);
+}
+.animation-element.slide-bottom {
+    opacity: 0;
+    -moz-transition: 0.5s linear;
+    -webkit-transition: 0.5s linear;
+    -o-transition: 0.5s linear;
+    transition: 0.5s linear;
+    -moz-transform: translate3d(0, 100px, 0);
+    -webkit-transform: translate3d(0, 100px, 0);
+    -o-transform: translate(0, 100px);
+    -ms-transform: translate(0, 100px);
+    transform: translate3d(0, 100px, 0);
+}
+.animation-element.slide-bottom-left {
+    opacity: 0;
+    -moz-transition: 0.5s linear;
+    -webkit-transition: 0.5s linear;
+    -o-transition: 0.5s linear;
+    transition: 0.5s linear;
+    -moz-transform: translate3d(-100px, 100px, 0);
+    -webkit-transform: translate3d(-100px, 100px, 0);
+    -o-transform: translate(-100px, 100px);
+    -ms-transform: translate(-100px, 100px);
+    transform: translate3d(-100px, 100px, 0);
+}
+.animation-element.slide-bottom-right {
+    opacity: 0;
+    -moz-transition: 0.5s linear;
+    -webkit-transition: 0.5s linear;
+    -o-transition: 0.5s linear;
+    transition: 0.5s linear;
+    -moz-transform: translate3d(100px, 100px, 0);
+    -webkit-transform: translate3d(100px, 100px, 0);
+    -o-transform: translate(100px, 100px);
+    -ms-transform: translate(100px, 100px);
+    transform: translate3d(100px, 100px, 0);
+}
+.animation-element.slide-rotate-clockwise {
+    opacity: 0;
+    -moz-transition: 0.5s linear;
+    -webkit-transition: 0.5s linear;
+    -o-transition: 0.5s linear;
+    transition: 0.5s linear;
+    -moz-transform: rotate(0);
+    -webkit-transform: rotate(0);
+    -o-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+}
+.animation-element.slide-left-rotate-clockwise {
+    opacity: 0;
+    -moz-transition: 1s linear;
+    -webkit-transition: 1s linear;
+    -o-transition: 1s linear;
+    transition: 1s linear;
+    -moz-transform: translate3d(-300px, 0, 0) rotate(0);
+    -webkit-transform: translate3d(-300px, 0, 0) rotate(0);
+    -o-transform: translate(-300px, 0) rotate(0);
+    -ms-transform: translate(-300px, 0) rotate(0);
+    transform: translate3d(-300px, 0, 0) rotate(0);
+}
+.animation-element.slide-rotate-counterclockwise {
+    opacity: 0;
+    -moz-transition: 0.5s linear;
+    -webkit-transition: 0.5s linear;
+    -o-transition: 0.5s linear;
+    transition: 0.5s linear;
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+.animation-element.slide-right-rotate-counterclockwise {
+    opacity: 0;
+    -moz-transition: 1s linear;
+    -webkit-transition: 1s linear;
+    -o-transition: 1s linear;
+    transition: 1s linear;
+    -moz-transform: translate3d(300px, 0, 0) rotate(360deg);
+    -webkit-transform: translate3d(300px, 0, 0) rotate(360deg);
+    -o-transform: translate(300px, 0) rotate(360deg);
+    -ms-transform: translate(300px, 0) rotate(360deg);
+    transform: translate3d(300px, 0, 0) rotate(360deg);
+}
+.animation-element.slide-rotate-clockwise-180,
+.animation-element.slide-rotate-counterclockwise-180 {
+    opacity: 0;
+    -moz-transition: 0.5s linear;
+    -webkit-transition: 0.5s linear;
+    -o-transition: 0.5s linear;
+    transition: 0.5s linear;
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.animation-element.slide-fade {
+    opacity: 0;
+    -moz-transition: 1s linear;
+    -webkit-transition: 1s linear;
+    -o-transition: 1s linear;
+    transition: 1s linear;
+}
+.animation-element.slide-fade-slow {
+    opacity: 0;
+    -moz-transition: 2s linear;
+    -webkit-transition: 2s linear;
+    -o-transition: 2s linear;
+    transition: 2s linear;
+}
+.animation-element.slide-fade-xslow {
+    opacity: 0;
+    -moz-transition: 3s linear;
+    -webkit-transition: 3s linear;
+    -o-transition: 3s linear;
+    transition: 3s linear;
+}
+.animation-element.slide-flip-x {
+    opacity: 0;
+    -moz-transition: 0.5s linear;
+    -webkit-transition: 0.5s linear;
+    -o-transition: 0.5s linear;
+    transition: 0.5s linear;
+    -moz-transform: rotateY(360deg);
+    -webkit-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+}
+.animation-element.slide-flip-y {
+    opacity: 0;
+    -moz-transition: 0.5s linear;
+    -webkit-transition: 0.5s linear;
+    -o-transition: 0.5s linear;
+    transition: 0.5s linear;
+    -moz-transform: rotateX(360deg);
+    -webkit-transform: rotateX(360deg);
+    -o-transform: rotateX(360deg);
+    -ms-transform: rotateX(360deg);
+    transform: rotateX(360deg);
+}
+.animation-element.slide-left-flip-x-y {
+    opacity: 0;
+    -moz-transition: 1s linear;
+    -webkit-transition: 1s linear;
+    -o-transition: 1s linear;
+    transition: 1s linear;
+    -moz-transform: translate3d(-200px, 0, 0) rotateX(360deg) rotateY(360deg);
+    -webkit-transform: translate3d(-200px, 0, 0) rotateX(360deg) rotateY(360deg);
+    -o-transform: translate(-200px, 0) rotateX(360deg) rotateY(360deg);
+    -ms-transform: translate(-200px, 0) rotateX(360deg) rotateY(360deg);
+    transform: translate3d(-200px, 0, 0) rotateX(360deg) rotateY(360deg);
+}
+.animation-element.slide-right-flip-x-y {
+    opacity: 0;
+    -moz-transition: 1s linear;
+    -webkit-transition: 1s linear;
+    -o-transition: 1s linear;
+    transition: 1s linear;
+    -moz-transform: translate3d(200px, 0, 0) rotateX(360deg) rotateY(360deg);
+    -webkit-transform: translate3d(200px, 0, 0) rotateX(360deg) rotateY(360deg);
+    -o-transform: translate(200px, 0) rotateX(360deg) rotateY(360deg);
+    -ms-transform: translate(200px, 0) rotateX(360deg) rotateY(360deg);
+    transform: translate3d(200px, 0, 0) rotateX(360deg) rotateY(360deg);
+}
+.animation-element.in-view {
+    opacity: 1;
+    -moz-transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    -o-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate3d(0, 0, 0);
+}
+.animation-element.slide-rotate-clockwise.in-view,
+.animation-element.slide-rotate-counterclockwise-180.in-view {
+    opacity: 1;
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+.animation-element.slide-rotate-clockwise-180.in-view,
+.animation-element.slide-rotate-counterclockwise.in-view {
+    opacity: 1;
+    -moz-transform: rotate(0);
+    -webkit-transform: rotate(0);
+    -o-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+}
+.animation-element.slide-left-rotate-clockwise.in-view {
+    opacity: 1;
+    -moz-transform: translate3d(0, 0, 0) rotate(360deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(360deg);
+    -o-transform: translate(0, 0) rotate(360deg);
+    -ms-transform: translate(0, 0) rotate(360deg);
+    transform: translate3d(0, 0, 0) rotate(360deg);
+}
+.animation-element.slide-right-rotate-counterclockwise.in-view {
+    opacity: 1;
+    -moz-transform: translate3d(0, 0, 0) rotate(0);
+    -webkit-transform: translate3d(0, 0, 0) rotate(0);
+    -o-transform: translate(0, 0) rotate(0);
+    -ms-transform: translate(0, 0) rotate(0);
+    transform: translate3d(0, 0, 0) rotate(0);
+}
+.animation-element.slide-flip-x.in-view {
+    opacity: 1;
+    -moz-transform: rotateY(0);
+    -webkit-transform: rotateY(0);
+    -o-transform: rotateY(0);
+    -ms-transform: rotateY(0);
+    transform: rotateY(0);
+}
+.animation-element.slide-flip-y.in-view {
+    opacity: 1;
+    -moz-transform: rotateX(0);
+    -webkit-transform: rotateX(0);
+    -o-transform: rotateX(0);
+    -ms-transform: rotateX(0);
+    transform: rotateX(0);
+}
+.animation-element.slide-left-flip-x-y.in-view,
+.animation-element.slide-right-flip-x-y.in-view {
+    opacity: 1;
+    -moz-transform: translate3d(0, 0, 0) rotateX(0) rotateY(0);
+    -webkit-transform: translate3d(0, 0, 0) rotateX(0) rotateY(0);
+    -o-transform: translate(0, 0) rotateX(0) rotateY(0);
+    -ms-transform: translate(0, 0) rotateX(0) rotateY(0);
+    transform: translate3d(0, 0, 0) rotateX(0) rotateY(0);
+}
+.dev.product-list .product-item {
+    opacity: 1;
+    -moz-transform: none !important;
+    -webkit-transform: none !important;
+    -o-transform: none !important;
+    -ms-transform: none !important;
+    transform: none !important;
+}
+.product-item {
+    padding: 10px;
+}
+.product-item .product-container {
+    text-align: left;
+    font: 14px sans-serif;
+    background-color: #fff;
+    border: 1px solid #dbe3e7;
+    border-radius: 3px;
+    box-shadow: 1px 3px 1px rgba(0, 0, 0, 0.08);
+    padding: 25px;
+}
+.product-item a.product-image {
+    display: block;
+    text-align: center;
+    box-shadow: 0 0 20px 8px #f3f3f3 inset;
+    width: 100%;
+    margin-bottom: 25px;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+.product-item a.product-image img {
+    height: 130px;
+}
+.product-item h2 {
+    font-size: 15px;
+    word-break: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+    max-height: 90px;
+    font-weight: 400;
+}
+.product-item h2 a {
+    text-decoration: none;
+    color: #2b2b2b;
+}
+.product-item a.small-text {
+    color: grey;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: block;
+    text-align: right;
+    font-size: 12px;
+}
+.product-item .product-rating {
+    color: #f09911;
+    font-size: 14px;
+}
+.product-item .product-rating a.small-text {
+    text-align: left;
+    margin: 0 0 0 10px;
+    display: inline-block;
+}
+.product-item p.product-description {
+    margin-top: 20px;
+    color: #5d5d5d;
+    line-height: 1.45;
+    white-space: normal;
+    margin-bottom: 20px;
+}
+.product-item button {
+    border-radius: 2px;
+    background: #87bae1;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12);
+    border: 0;
+    color: #fff;
+    font-weight: 700;
+    font-size: 13px;
+    padding: 8px 20px;
+}
+.product-item button:active {
+    background: #87bae1;
+    color: #fff;
+    border: 0;
+}
+.product-item button:focus,
+.product-item button:focus:active {
+    background: #87bae1;
+    outline: 0;
+    color: #fff;
+}
+.product-item button:hover {
+    background: #66abe0;
+    color: #fff;
+}
+.product-item .product-price {
+    color: #4e4e4e;
+    font-weight: 700;
+    font-size: 20px;
+    padding-top: 5px;
+    text-align: right;
+}
+.form-control-borderless {
+    border: none;
+}
+.form-control-borderless:active,
+.form-control-borderless:focus,
+.form-control-borderless:hover {
+    border: none;
+    outline: 0;
+    box-shadow: none;
+}
