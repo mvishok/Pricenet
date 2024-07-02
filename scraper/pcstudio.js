@@ -23,8 +23,8 @@ const pcstudio = async (q) => {
 
         data.push({ 
             "title": title,
-            "link": `https://www.headphonezone.in${link}`,
-            "rating": rating,
+            "link": `${link}`,
+            "rating": 404,
             "price": price,
             "freeDelivery": true,
             "desc": desc,
