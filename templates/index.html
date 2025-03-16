@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Pricenet</title>
+    <link rel="stylesheet" href="static/assets/bootstrap/css/bootstrap.min.css?h=97fdfa31c346c923d830c27d591ac4aa">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="static/assets/fonts/fontawesome5-overrides.min.css?h=4a0a5888449ae2bad1cf0c0f1eb40cf4">
+    <link rel="stylesheet" href="static/assets/css/styles.min.css?h=4f314c07c15f6454cefb7bae5d8fb1a3">
+    <link rel="stylesheet" href="static/assets/css/loader.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+<header class="pt-5">
+    <!-- Start: Fixed navbar starting with transparency -->
+    <nav class="navbar navbar-expand-md fixed-top navbar-transparency navbar-light width:100vw;">
+        <div class="container" style="position: absolute; top:0; left:0; min-width:100% !important">
+            <a class="navbar-brand" href="#"><img src="static/assets/img/logo.png" /></a>
+            <button class="btn btn-danger ms-auto" style="position: absolute; top:25px; right:25px;">Exit</button>
+        </div>
+    </nav>
+    <!-- End: Fixed navbar starting with transparency -->
+</header>
+    <!-- Start: Hero Clean Reverse -->
+    <div class="container pt-4 pt-xl-5">
+        <div class="row pt-5">
+            <div class="col-md-8 col-lg-9 text-center text-md-start mx-auto">
+                <div class="text-center">
+                    <h1 class="display-4 fw-bold mb-5">Shop smarter, Find Affordable&nbsp;<span
+                            class="underline">Deals</span></h1>
+                    <p class="fs-5 text-muted mb-5">Discover the Best Deals and Compare Prices for Your Favorite
+                        Products.<br>With Ease.</p>
+                    <div class="row">
+                        <div class="col-md-10 offset-md-1">
+                            <div class="card m-auto" style="max-width:850px;">
+                                <div class="card-body">
+                                    <form id="queryForm" class="d-flex align-items-center"><i
+                                            class="fas fa-search text-body d-none d-sm-block h4 m-0"></i><input
+                                            id="query" list="ac"
+                                            class="form-control form-control-lg flex-shrink-1 form-control-borderless"
+                                            type="search" placeholder="{{ placeholder }}" name="query"
+                                            value="{{ query if query else '' }}">
+                                        <datalist id="ac"></datalist>
+                                        <button id="querySubmit" class="btn btn-success btn-lg"
+                                            type="submit">Search</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        {% if qSpell: %}<center><p class="fs-5 text-muted mb-5">Did you mean: <a href="/query?={{qSpell}}">{{ qSpell }}</a></p></center>{% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- End: Hero Clean Reverse -->
+    <!-- Start: Animated Pretty Product List (v1.2) -->
+    {% if results==None %}
+    <div id="results">
+        <div class="container">
+            <h1 style="text-align:center;">Either no results or an error occured.</h1>
+        </div>
+    </div>
+    {% endif %}
+    {% if query != "" and results!=None %}
+    <div id="results">
+        <div class="container">
+            <form class="d-flex justify-content-center flex-wrap" method="post" data-bs-theme="light"><br /><br />
+                <div class="shadow-lg mb-3"></div>
+                <div class="shadow-lg mb-3"></div>
+            </form>
+            <h1 style="text-align:center;">Results for {{ query }}</h1><!-- Start: Animated Pretty Product List -->
+            <div class="row product-list dev"><!-- Start: Slide Left Flip X/Y-axis -->
+                {% for result in results %}
+                <div class="col-sm-6 col-md-4 product-item animation-element slide-left-flip-x-y">
+                    <div class="product-container">
+                        <div class="row">
+                            <div class="col-md-12"><a class="product-image"><img src="{{result.img}}"></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-8 col-xxl-12">
+                                <h2><a href="{{result.link}}">{{result.name}}</a></h2>
+                            </div>
+                        </div>
+                        <div class="product-rating">
+                            {% if result.rating > 0 %}
+                            {% for i in range(5) %}
+                            {% if result.rating >= i + 1 %}
+                            {% if result.rating > i and result.rating < i + 1 %} <i class="fa fa-star-half"></i>
+                                {% else %}
+                                <i class="fa fa-star"></i>
+                                {% endif %}
+                                {% else %}
+                                <i class="fa fa-star-o"></i>
+                                {% endif %}
+                                {% endfor %}
+                                {% endif %}
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <p class="product-description">Sold By: {{result.seller}}<br><br>
+                                </p>{{result.text | safe}}<br><br>
+                                {% if result.freeDelivery %}
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"
+                                    stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                                    stroke-linejoin="round" class="icon icon-tabler icon-tabler-truck-delivery"
+                                    style="font-size: 24px;">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <circle cx="7" cy="17" r="2"></circle>
+                                    <circle cx="17" cy="17" r="2"></circle>
+                                    <path d="M5 17h-2v-4m-1 -8h11v12m-4 0h6m4 0h2v-6h-8m0 -5h5l3 5"></path>
+                                    <line x1="3" y1="9" x2="7" y2="9"></line>
+                                </svg>&nbsp;Free Delivery
+                                </p>
+                                {% endif %}
+                                <div class="row">
+                                    <div class="col-6"><a href="{{result.link}}"><button class="btn btn-light"
+                                                type="button">Buy Now!</button></a>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="product-price">₹<span class='finalPrice'>{{result.price}}</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End: Slide Left Flip X/Y-axis -->
+                {% endfor %}
+            </div><!-- End: Animated Pretty Product List -->
+        </div>
+        {% endif %}
+    </div><!-- End: Animated Pretty Product List (v1.2) -->
+    <section>
+    </section>
+    <section></section>
+    <section></section><!-- Start: Footer Multi Column -->
+    <footer></footer><!-- End: Footer Multi Column -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="static/assets/js/script.min.js"></script>
+    <script>
+        var elements = document.getElementsByClassName("finalPrice");
+        for (var i = 0; i < elements.length; i++) {
+            var element = elements[i];
+            var price = parseFloat(element.innerText);
+            if (!isNaN(price)) {
+                var formattedPrice = price.toLocaleString("en-IN", {
+                    maximumFractionDigits: 2,
+                    minimumFractionDigits: 2
+                });
+                element.innerText = formattedPrice;
+            }
+        }
+    </script>
+
+</body>
+
+</html>
